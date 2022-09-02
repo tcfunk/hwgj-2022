@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
@@ -15,7 +12,6 @@ public class MainMenu : MonoBehaviour
     private void Start()
     {
         ui = GetComponent<UIDocument>().rootVisualElement;
-
         mainMenu = ui.Q<VisualElement>("menu_main");
         optionsMenu = ui.Q<VisualElement>("menu_options");
         
@@ -24,7 +20,6 @@ public class MainMenu : MonoBehaviour
 
         ui.Q<Button>("button_start").RegisterCallback<ClickEvent>(e =>
         {
-            Debug.Log("clicked button_start");
             SceneManager.LoadScene("Scenes/Playground");
         });
 
@@ -32,7 +27,6 @@ public class MainMenu : MonoBehaviour
         {
             mainMenu.style.display = DisplayStyle.None;
             optionsMenu.style.display = DisplayStyle.Flex;
-            // optionsMenu.enabledSelf = false;
         });
         
         ui.Q<Button>("button_close_options").RegisterCallback<ClickEvent>(e =>  {

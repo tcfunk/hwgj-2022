@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="OptionsMenu" src="project://database/Assets/UI%20Toolkit/OptionsMenu.uxml?fileID=9197481963319205126&amp;guid=cfa54fe3b3da81c4e9c43f44c76b497e&amp;type=3#OptionsMenu" />
+    <Style src="project://database/Assets/UI%20Toolkit/MainMenuStyles.uss?fileID=7433441132597879392&amp;guid=d7341ab75ef39d045b58455b898b7aef&amp;type=3#MainMenuStyles" />
+    <ui:VisualElement style="flex-grow: 1; flex-basis: auto; background-color: rgba(0, 0, 0, 0.33); flex-direction: row;">
+        <ui:VisualElement style="flex-grow: 1;" />
+        <ui:VisualElement name="menu_ingame" style="flex-grow: 1; align-items: stretch; justify-content: center; display: flex;">
+            <ui:Button text="Options" display-tooltip-when-elided="true" name="button_options" class="main-menu--button" />
+            <ui:Button text="Quit" display-tooltip-when-elided="true" name="button_quit" class="main-menu--button" />
+            <ui:Button text="Close" display-tooltip-when-elided="true" name="button_close" class="main-menu--button" />
+        </ui:VisualElement>
+        <ui:Instance template="OptionsMenu" name="menu_options" style="display: none; flex-grow: 2;" />
+        <ui:VisualElement style="flex-grow: 1;" />
+    </ui:VisualElement>
+</ui:UXML>

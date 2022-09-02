@@ -107,8 +107,8 @@ namespace StarterAssets
 			Debug.LogError( "Starter Assets package is missing dependencies. Please use Tools/Starter Assets/Reinstall Dependencies to fix it");
 #endif
 
-			Cursor.lockState = CursorLockMode.Locked;
-			Cursor.visible = false;
+			// Cursor.lockState = CursorLockMode.Locked;
+			// Cursor.visible = false;
 
 			// reset our timeouts on start
 			_jumpTimeoutDelta = JumpTimeout;
