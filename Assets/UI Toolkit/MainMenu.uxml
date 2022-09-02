@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/MainMenuStyles.uss?fileID=7433441132597879392&amp;guid=d7341ab75ef39d045b58455b898b7aef&amp;type=3#MainMenuStyles" />
+    <ui:VisualElement name="VisualElement" style="flex-grow: 1; flex-direction: row; justify-content: space-around;">
+        <ui:VisualElement class="flex-col one-third" style="flex-grow: 1; max-width: 33%; justify-content: center; align-items: stretch;">
+            <ui:Image style="height: initial; width: initial; background-image: url(&apos;project://database/Assets/Sprites/logo.png?fileID=21300000&amp;guid=504189b2621eaa048b662dbb5af612c1&amp;type=3#logo&apos;); flex-grow: 1; flex-shrink: 0; min-height: initial; max-height: initial; max-width: initial; min-width: initial; flex-basis: 50%;" />
+            <ui:VisualElement style="flex-grow: 1; min-width: auto; min-height: auto; flex-shrink: 0; justify-content: center; align-items: stretch; flex-basis: 50%;">
+                <ui:Button name="button_start" text="Start Game" display-tooltip-when-elided="true" class="main-menu--button" />
+                <ui:Button name="button_options" text="Options" display-tooltip-when-elided="true" class="main-menu--button" />
+                <ui:Button name="button_quit" text="Quit" display-tooltip-when-elided="true" class="main-menu--button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

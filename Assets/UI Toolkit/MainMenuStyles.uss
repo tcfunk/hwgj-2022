@@ -1,0 +1,20 @@
+VisualElement {
+}
+
+* {
+    font-size: 16px;
+}
+
+.flex-col {
+    flex: auto;
+    flex-grow: 1;
+}
+
+.one-third {
+    width: 33%;
+}
+
+.main-menu--button {
+    padding: 24px 0;
+    margin: 16px 0;
+}
