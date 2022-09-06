@@ -160,6 +160,8 @@ namespace StarterAssets
 		{
 			// set target speed based on move speed, sprint speed and if sprint is pressed
 			float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
+			
+			Debug.Log(_input.move);
 
 			// a simplistic acceleration and deceleration designed to be easy to remove, replace, or iterate upon
 

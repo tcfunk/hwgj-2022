@@ -1,18 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private static GameManager m_Singleton;
+    public static GameManager Singleteon { get => m_Singleton; }
+    
+    private void Awake()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (m_Singleton != null && m_Singleton != this) Destroy(this.gameObject);
+        m_Singleton = this;
     }
 }
